@@ -1,7 +1,7 @@
-'use client'
+'use client';
+
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, ArrowRight } from "lucide-react";
-
 
 const Hero = () => {
   const scrollToSection = (id) => {
@@ -13,20 +13,20 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated Grid Background */}
+      {/* 🔹 Animated Visible Grid Background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-background">
-          <div className="absolute inset-0 opacity-20">
-            <div
-              className="absolute inset-0"
-              style={{
-                backgroundImage:
-                  "linear-gradient(hsl(var(--primary) / 0.1) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--primary) / 0.1) 1px, transparent 1px)",
-                backgroundSize: "50px 50px",
-                animation: "grid-move 20s linear infinite",
-              }}
-            />
-          </div>
+          <div
+  className="absolute inset-0"
+  style={{
+    backgroundImage:
+      "linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px)",
+    backgroundSize: "50px 50px",
+    animation: "grid-move 30s linear infinite",
+    zIndex: 0,
+  }}
+/>
+
 
           {/* Glow accents */}
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse" />
@@ -46,12 +46,11 @@ const Hero = () => {
           </h1>
 
           {/* Subtext */}
-         <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-  I'm <span className="text-foreground font-medium">Virgil Khayanga</span>, a Software Developer and entrepreneur at heart, exploring how technology can shape the future. 
-  I enjoy building from the ground up from prototypes and digital tools to products that solve real-world challenges. 
-  My journey blends creativity, innovation, and code to bring bold ideas to life.
-</p>
-
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            I'm <span className="text-foreground font-medium">Virgil Khayanga</span>, a Software Developer and entrepreneur at heart, exploring how technology can shape the future.
+            I enjoy building from the ground up—from prototypes and digital tools to products that solve real-world challenges.
+            My journey blends creativity, innovation, and code to bring bold ideas to life.
+          </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4 justify-center pt-4">
@@ -92,7 +91,7 @@ const Hero = () => {
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href="mailt:devkhayanga@gmail.com"
+              href="mailto:devkhayanga@gmail.com"
               className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/10 transition-all duration-300"
             >
               <Mail className="h-5 w-5" />
