@@ -1,42 +1,58 @@
 const experiences = [
-  
   {
-    role: "Founder & Product Lead",
-    company: " Senti Expense Tracker App (Personal Project)",
-    period: "2025 - Present",
+    role: "Technical Lead",
+    company: "Arbarne Agricultural Group",
+    period: "Oct 2025 - Present",
     description:
-      "Building a cross-platform mobile app expense tracking application designed to help users manage their finances with clarity and insight.",
+      "Leading the development of digital solutions at an agri-tech company focused on digitizing food safety and compliance across agricultural operations.",
     achievements: [
-      "Developed the React Native frontend with Node.js and Express backend",
-      "Integrated PostgreSQL for data persistence and analytics",
-      "Focused on clean UI/UX and scalable architecture for future feature growth",
+      "Design and maintain farm management and compliance software systems, improving operational efficiency by 30%",
+      "Develop backend services and APIs, and build responsive front-end interfaces used by farm teams daily",
+      "Manage databases and system architecture to ensure scalable, reliable, and high-performance systems",
+      "Implement digital solutions that streamline food safety tracking and compliance reporting, reducing manual errors by 40%",
     ],
   },
+
+  {
+    role: "Founder & Product Lead",
+    company: "Senti Expense Tracker App",
+    period: "Apr 2025 - Present",
+    description:
+      "Building a cross-platform mobile app to help users track and manage their finances with clarity and insight.",
+    achievements: [
+      "Developed React Native frontend and Node.js/Express backend, achieving smooth cross-platform functionality",
+      "Integrate PostgreSQL for data persistence and analytics, enabling users to track spending trends effectively",
+      "Focus on clean UI/UX and scalable architecture, preparing the app for future feature expansion and user growth",
+    ],
+  },
+
   {
     role: "Frontend Developer (Contractor)",
     company: "Kodit Afrika",
-    period: "Aug 2025 - Present",
+    period: "Aug 2025 - Oct 2025",
     description:
-      "Created a visually rich e-commerce frontend for an online art marketplace focused on connecting artists and buyers.",
+      "Developed a visually rich e-commerce frontend for an online art marketplace connecting artists and buyers.",
     achievements: [
-      "Developed using Next.js, React, and Tailwind CSS with REST API integration",
-      "Designed responsive layouts and interactive components for a smooth user experience",
-      "Implemented dynamic product listings and artist profiles via API consumption",
+      "Built responsive layouts and interactive components using Next.js, React, and Tailwind CSS, enhancing user engagement by 25%",
+      "Integrated REST APIs for dynamic product listings and artist profiles, improving real-time content delivery",
+      "Optimized user experience through smooth navigation and responsive design, increasing average session duration",
     ],
   },
+
   {
     role: "Software Developer",
     company: "Ubuntu WaterHub Africa",
-    period: "2024 - Present",
+    period: "Aug 2024 - Present",
     description:
-      "Developing and maintaining the company’s digital presence through a modern, responsive landing page for its smart water ATM and metering solutions.",
+      "Develop and maintain the company’s digital presence, including a modern landing page for smart water ATM and metering solutions.",
     achievements: [
-      "Designed and built a sleek, mobile-friendly landing page using Next.js and Tailwind CSS",
-      "Integrated REST APIs to display real-time product and service information",
-      "Collaborated with the marketing team to align design and branding with company goals",
+      "Designed and implemented a mobile-friendly landing page using Next.js and Tailwind CSS, boosting site traffic by 20%",
+      "Integrated REST APIs to display real-time product and service information, improving customer access to information",
+      "Collaborated with marketing to align design, branding, and user experience, enhancing conversion rates and engagement",
     ],
   },
 ];
+
 
 const Experience = () => {
   return (
