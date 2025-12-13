@@ -5,33 +5,40 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-  title: "Smart Water Solutions Landing Page",
-  description:
-    "A responsive company website for showcasing smart water ATMs and metering solutions. Designed with Next.js, React, and Tailwind CSS to deliver a modern, fast, and engaging digital experience.",
-  tech: ["Next.js", "React", "Tailwind CSS"],
-  github: "https://github.com/khayanga/Ubuntu",
-  live: "https://waterhub.africa/",
-},
+    title: "Smart Water Solutions Landing Page",
+    description:
+      "A responsive company website for showcasing smart water ATMs and metering solutions. Designed with Next.js, React, and Tailwind CSS to deliver a modern, fast, and engaging digital experience.",
+    tech: ["Next.js", "React", "Tailwind CSS"],
+    github: "https://github.com/khayanga/Ubuntu",
+    live: "https://waterhub.africa/",
+  },
 
   {
-  title: "Senti - Mobile Expense Tracker",
-  description:
-    "A cross-platform expense tracker helping users manage budgets, monitor spending, and visualize financial habits. Built with React Native, Node.js, Express, and PostgreSQL.",
-  tech: ["React Native", "Node.js", "Express", "PostgreSQL"],
-  github: "https://github.com/khayanga/expense-tracker-app",
-  live: "#",
-},
+    title: "Senti - Mobile Expense Tracker",
+    description:
+      "A cross-platform expense tracker helping users manage budgets, monitor spending, and visualize financial habits. Built with React Native, Node.js, Express, and PostgreSQL.",
+    tech: ["React Native", "Node.js", "Express", "PostgreSQL"],
+    github: "https://github.com/khayanga/expense-tracker-app",
+    live: "#",
+  },
 
- {
-  title: "Untitled Gallery - Modern Art Storefront",
-  description:
-    "A clean and immersive frontend for an art e-commerce platform where users can explore and purchase artworks. Developed with Next.js, React, and Tailwind CSS, the site integrates REST APIs for real-time data and a smooth shopping experience.",
-  tech: ["Next.js", "React", "Tailwind CSS", "REST APIs"],
-  github: "https://github.com/khayanga/Untitled-gallery",
-  live: "#",
-},
+  {
+    title: "Untitled Gallery - Modern Art Storefront",
+    description:
+      "A clean and immersive frontend for an art e-commerce platform where users can explore and purchase artworks. Developed with Next.js, React, and Tailwind CSS, the site integrates REST APIs for real-time data and a smooth shopping experience.",
+    tech: ["Next.js", "React", "Tailwind CSS", "REST APIs"],
+    github: "https://github.com/khayanga/Untitled-gallery",
+    live: "#",
+  },
 
-  
+  {
+    title: "Arbarne Agricultural Group - Farm Management & Compliance System",
+    description:
+      "A digital platform for managing farm operations, food safety, and compliance. Designed and built to streamline processes and improve operational efficiency across agricultural activities.",
+    tech: ["React", "Node.js", "Express", "PostgreSQL", "REST APIs"],
+    github: "https://github.com/khayanga/Farm-Pace",
+    live: "https://farm-pace-k0bwin9ws-khayangas-projects.vercel.app/signin",
+  },
 ];
 
 export default function Projects() {
