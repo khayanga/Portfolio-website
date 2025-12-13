@@ -48,7 +48,7 @@ const Hero = () => {
           {/* Subtext */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             I'm <span className="text-foreground font-medium">Virgil Khayanga</span>, a Software Developer and entrepreneur at heart, exploring how technology can shape the future.
-            I enjoy building from the ground up—from prototypes and digital tools to products that solve real-world challenges.
+            I enjoy building from the ground up from prototypes and digital tools to products that solve real-world challenges.
             My journey blends creativity, innovation, and code to bring bold ideas to life.
           </p>
 
