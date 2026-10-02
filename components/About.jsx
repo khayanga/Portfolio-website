@@ -1,69 +1,215 @@
+
+
+
 "use client";
 
-import { Code2, Database, Globe, Server } from "lucide-react";
+import {
+  Code2,
+  Database,
+  Layers3,
+  PenTool,
+  ArrowUpRight,
+} from "lucide-react";
 
-const skills = [
-  { name: "React", icon: Code2 },
-  { name: "React Native", icon: Code2 },
-  { name: "Next.js", icon: Globe },
-  { name: "Node.js", icon: Server },
-  { name: "Express", icon: Server },
-  { name: "PostgreSQL", icon: Database },
-    { name: "MongoDB", icon: Database },
-  { name: "TypeScript", icon: Code2 },
-  { name: "Tailwind CSS", icon: Code2 },
-  { name: "REST APIs", icon: Globe },
+const capabilities = [
+  {
+    number: "01",
+    title: "Think",
+    subtitle: "Product",
+    description:
+      "I start with the problem understanding users, exploring opportunities, and shaping ideas into products worth building.",
+    icon: Layers3,
+  },
+  {
+    number: "02",
+    title: "Design",
+    subtitle: "Experience",
+    description:
+      "I turn product ideas into clear, intuitive experiences that make complex problems feel simple.",
+    icon: PenTool,
+  },
+  {
+    number: "03",
+    title: "Build",
+    subtitle: "Technology",
+    description:
+      "I understand the technology behind the product and work closely with teams to turn ideas into working solutions.",
+    icon: Code2,
+  },
+];
+
+const technologies = [
+  "React",
+  "Next.js",
+  "React Native",
+  "TypeScript",
+  "Node.js",
+  "Express",
+  "PostgreSQL",
+  "MongoDB",
+  "REST APIs",
+  "Tailwind CSS",
 ];
 
 export default function About() {
   return (
-    <section id="about" className="py-24 px-6">
+    <section id="about" className="py-28 px-6">
       <div className="mx-auto max-w-6xl">
-        <div className="space-y-12 animate-fade-in-up">
-          {/* Section Header */}
-          <div className="space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold">About Me</h2>
-            <div className="h-1 w-20 bg-primary rounded-full" />
+
+        {/* Section Header */}
+        <div className="max-w-3xl space-y-5 animate-fade-in-up">
+          <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">
+            About
+          </p>
+
+          <h2 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">
+            More than code.
+          </h2>
+
+          <div className="h-1 w-20 bg-primary rounded-full" />
+
+          <p className="pt-2 text-xl md:text-2xl text-muted-foreground leading-relaxed">
+            I care about the{" "}
+            <span className="text-foreground font-medium">
+              problem before the product,
+            </span>{" "}
+            the{" "}
+            <span className="text-foreground font-medium">
+              user before the interface,
+            </span>{" "}
+            and the{" "}
+            <span className="text-foreground font-medium">
+              outcome after launch.
+            </span>
+          </p>
+        </div>
+
+        {/* Intro */}
+        <div className="grid lg:grid-cols-2 gap-12 mt-16 items-start animate-fade-in-up">
+
+          <div className="space-y-5 text-lg leading-relaxed text-muted-foreground">
+            
+
+            <p>
+              I enjoy working where{" "}
+              <span className="text-foreground font-medium">
+                ideas, people, and technology
+              </span>{" "}
+              meet figuring out what is worth building and helping turn it
+              into something real.
+            </p>
+
+            <p>
+              My technical background gives me a hands-on understanding of
+              development, while my product and design perspective keeps me
+              focused on the bigger picture:{" "}
+              <span className="text-foreground font-medium">
+                users, value, execution, and impact.
+              </span>
+            </p>
           </div>
 
-          {/* About Content */}
-          <div className="grid md:grid-cols-2 gap-12 items-start">
-            <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
-  <p>
-    I’ve always believed creativity and technology share the same heartbeat
-    both are about solving problems in unexpected ways. I love exploring where
-    those worlds meet.
-  </p>
-  <p>
-    Whether it’s building tools, designing systems, or testing wild ideas, I’m
-    driven by curiosity and a constant desire to understand how things work and
-    how they can work better.
-  </p>
-  <p>
-    I’m less focused on titles and more on impact. The real goal is to keep
-    learning, keep creating, and keep building the future one idea at a time.
-  </p>
-</div>
+          {/* Brand Statement */}
+          <div className="relative p-8 md:p-10 rounded-2xl border border-border bg-card/50 overflow-hidden group">
+            <div className="absolute -right-16 -top-16 w-40 h-40 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/20 transition-all duration-500" />
 
+            <div className="relative">
+              <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground mb-5">
+                My approach
+              </p>
 
-            {/* Skills Grid */}
-            <div>
-              <h3 className="text-2xl font-semibold mb-6">Tech Stack</h3>
-              <div className="grid grid-cols-2 gap-4">
-                {skills.map((skill) => (
-                  <div
-                    key={skill.name}
-                    className="flex items-center gap-3 p-4 rounded-lg bg-card border border-border hover:border-primary/50 hover:bg-card/80 transition-all duration-300 group"
-                  >
-                    <skill.icon className="h-5 w-5 text-primary group-hover:scale-110 transition-transform" />
-                    <span className="font-medium">{skill.name}</span>
-                  </div>
-                ))}
-              </div>
+              <h3 className="text-3xl  text-primary md:text-4xl font-bold leading-tight">
+                Not every idea needs to be built.
+              </h3>
+
+              <p className="mt-4 text-lg  leading-relaxed">
+                I focus on understanding the problem, finding the opportunity,
+                and building the things that are actually worth building.
+              </p>
+
+              
             </div>
           </div>
         </div>
+
+        {/* Capabilities */}
+        <div className="grid md:grid-cols-3 gap-5 mt-20">
+          {capabilities.map((capability) => {
+            const Icon = capability.icon;
+
+            return (
+              <div
+                key={capability.number}
+                className="group relative p-7 rounded-2xl border border-border bg-card
+                hover:border-primary/50 hover:-translate-y-1
+                transition-all duration-300"
+              >
+                <div className="flex items-start justify-between">
+                  <div className="p-3 rounded-xl bg-primary/10">
+                    <Icon className="h-6 w-6 text-primary" />
+                  </div>
+
+                  <span className="text-sm text-muted-foreground">
+                    {capability.number}
+                  </span>
+                </div>
+
+                <div className="mt-8">
+                  <h3 className="text-2xl font-bold">
+                    {capability.title}
+                    <span className="text-muted-foreground font-normal">
+                      {" "}
+                      / {capability.subtitle}
+                    </span>
+                  </h3>
+
+                  <p className="mt-4 leading-relaxed">
+                    {capability.description}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Technical Foundation */}
+        <div className="mt-20 pt-10 border-t border-border">
+          <div className="flex flex-col lg:flex-row lg:items-start gap-8">
+
+            <div className="lg:w-1/3">
+              <p className="text-sm uppercase tracking-[0.2em] text-primary">
+                Technical foundation
+              </p>
+
+              <h3 className="mt-3 text-2xl font-bold">
+                Enough tech to build the idea.
+              </h3>
+
+              <p className="mt-3 text-muted-foreground">
+                A hands-on engineering background that helps me understand
+                products beyond the surface.
+              </p>
+            </div>
+
+            <div className="lg:w-2/3 flex flex-wrap gap-3">
+              {technologies.map((technology) => (
+                <span
+                  key={technology}
+                  className="px-4 py-2 rounded-full border border-border
+                  text-sm font-medium text-muted-foreground
+                  hover:text-foreground hover:border-primary/50
+                  transition-colors duration-300"
+                >
+                  {technology}
+                </span>
+              ))}
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </section>
   );
 }
+

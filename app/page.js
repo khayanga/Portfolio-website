@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import CaseStudy from "@/components/CaseStudy";
 import Contact from "@/components/Contact";
 import Experience from "@/components/Experiences";
 import Footer from "@/components/Footer";
@@ -11,6 +12,8 @@ export default function Home() {
     <main className="min-h-screen bg-background">
       <Hero/>
       <About/>
+      
+      <CaseStudy/>
       <Projects/>
       <Experience/>
       <Contact/>

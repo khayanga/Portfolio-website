@@ -69,7 +69,7 @@ export default function Contact() {
         <div className="space-y-12 animate-fade-in-up">
           {/* Section Header */}
           <div className="space-y-4 text-center">
-            <h2 className="text-4xl md:text-5xl font-bold">Get in Touch</h2>
+            <h2 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">Get in Touch</h2>
             <div className="h-1 w-20 bg-primary rounded-full mx-auto" />
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Have a project in mind or want to collaborate? Let&apos;s connect.
