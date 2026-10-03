@@ -18,7 +18,7 @@ export default function Contact() {
     message: "",
   });
 
-   const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!formData.name || !formData.email || !formData.message) {
@@ -33,25 +33,23 @@ export default function Contact() {
     setLoading(true);
 
     try {
-      await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          message: formData.message,
+      await fetch(process.env.NEXT_PUBLIC_APPS_SCRIPT_URL , {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "text/plain;charset=utf-8",
         },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-      );
+        body: JSON.stringify(formData),
+      });
 
       toast({
         title: "Message sent ✨",
-        description: "Thanks for reaching out! I’ll get back to you soon.",
+        description: "Thanks for reaching out! Your message has been recorded.",
       });
 
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
-      console.error("EmailJS error:", error);
+      console.error("Apps Script error:", error);
       toast({
         title: "Failed to send message",
         description: "Please try again or reach me directly via email.",
@@ -61,7 +59,6 @@ export default function Contact() {
       setLoading(false);
     }
   };
-
 
   return (
     <section id="contact" className="py-24 px-6 bg-muted/30">
@@ -156,7 +153,9 @@ export default function Contact() {
                 <h4 className="font-medium">Find me on</h4>
                 <div className="space-y-3">
                   <a
-                    href="mailto:virgil@example.com"
+                     href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=devkhayanga@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
                     className="flex items-center gap-3 p-4 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 group"
                   >
                     <Mail className="h-5 w-5 text-primary" />

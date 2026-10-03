@@ -11,6 +11,12 @@ export default {
 
   theme: {
     extend: {
+
+      fontFamily: {
+        heading: ['Georgia', 'Cambria', 'serif'],
+        body: ['Inter', 'system-ui', 'sans-serif'],
+      },
+    
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
